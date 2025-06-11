@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kaari House</title>
+  <link rel="stylesheet" href="kaari.css">
+  <style>
+    /* Dropdown Hover Effect */
+    nav ul li {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      padding: 0.5rem 0;
+      margin: 0;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      z-index: 1000;
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      padding: 0.75rem 1rem;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">The Kaari House</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#shop">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a href="womens.html">Women's Clothing</a></li>
+            <li><a href="mens.html">Men's Clothing</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="accessories.html">Jewelry & Accessories</a></li>
+            <li><a href="brands.html">By Brand</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Elevate Your Everyday</h1>
+    <p>Discover unique collections from independent designers and brands.</p>
+    <a href="#featured" class="btn">Meet the Brands</a>
+  </section>
+
+  <!-- Featured Brands Section -->
+  <section id="featured" class="products">
+    <h2>Featured Brands</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="brand1.jpg" alt="Brand One">
+        <h3>Studio Noor</h3>
+        <p>Contemporary South Asian fashion for the modern muse.</p>
+      </div>
+      <div class="product-card">
+        <img src="brand2.jpg" alt="Brand Two">
+        <h3>Form & Fold</h3>
+        <p>Luxury basics and everyday silhouettes that celebrate comfort.</p>
+      </div>
+      <div class="product-card">
+        <img src="brand3.jpg" alt="Brand Three">
+        <h3>Khula Home</h3>
+        <p>Handcrafted decor and textiles rooted in heritage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>Our Story</h2>
+    <p>The Kaari House is a homegrown collective centered on mindful fashion and lifestyle. We bring together independent brands and designers who value ethical production, timeless design, and cultural storytelling.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions about sizing, shipping, or styling? Drop us a note.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Kaari House. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
